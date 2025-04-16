@@ -31,13 +31,13 @@ header {
 }
 
 header h1 {
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
 header p {
-  font-weight: 300;
+  font-weight: 700;
   color: var(--accent);
   margin-bottom: 1rem;
 }
