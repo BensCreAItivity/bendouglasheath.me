@@ -1,83 +1,78 @@
-/* Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap');
 
 :root {
   --font-main: 'Raleway', sans-serif;
   --text: #f0f0f0;
-  --background: #1a1a1a;  /* Charcoal black */
+  --background: #1a1a1a;
   --accent: #a9a9b3;
+  --button-bg: #f0f0f0;
+  --button-text: #1a1a1a;
 }
 
 body {
   font-family: var(--font-main);
   background-color: var(--background);
   color: var(--text);
-  margin: 4;
+  margin: 0;
   padding: 0;
+  font-size: 1.25rem;
   line-height: 1.8;
-  font-size: 1.25rem; /* ~25% larger */
 }
 
 .container {
-  max-width: 840px;
-  margin-inline: auto; /* centres container */
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 4rem 2rem;
 }
 
-@media (min-width: 1200px) {
-  .container {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .container {
-    padding: 2rem 1.25rem;
-  }
-}
-
 header {
-  text-align: center;
   margin-bottom: 3rem;
+  text-align: left;
 }
 
-h1 {
+header h1 {
+  font-size: 2rem;
   font-weight: 700;
-  font-size: 3rem;
-  margin: 0.2rem 0;
-  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
 }
 
-.tagline {
-  font-size: 1.1rem;
+header p {
   font-weight: 300;
   color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
 }
 
-h2 {
-  font-size: 1.5rem;
-  margin-top: 2.5rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--accent);
+hr {
+  border: none;
+  border-top: 1px solid var(--accent);
+  margin: 2rem 0;
 }
 
-ul {
-  padding-left: 1.5rem;
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-a {
-  color: var(--text);
-  text-decoration: underline dotted;
+.column {
+  flex: 1;
+  min-width: 300px;
 }
 
-footer {
-  text-align: center;
-  margin-top: 5rem;
-  font-size: 0.95rem;
-  color: #bbb;
+.button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background-color: #ffffffcc;
 }
