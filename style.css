@@ -12,7 +12,7 @@ body {
   font-family: var(--font-main);
   background-color: var(--background);
   color: var(--text);
-  margin: 0;
+  margin: 4;
   padding: 0;
   line-height: 1.8;
   font-size: 1.25rem; /* ~25% larger */
