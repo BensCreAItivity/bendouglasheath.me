@@ -3,9 +3,9 @@
 
 :root {
   --font-main: 'Raleway', sans-serif;
-  --text: #222;
-  --background: #fdfdfd;
-  --accent: #444;
+  --text: #f0f0f0;
+  --background: #343541;
+  --accent: #a9a9b3;
 }
 
 body {
@@ -14,13 +14,14 @@ body {
   color: var(--text);
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  line-height: 1.8;
+  font-size: 1.25rem; /* ~25% larger than 1rem */
 }
 
 .container {
-  max-width: 800px;
+  max-width: 840px;
   margin: auto;
-  padding: 3rem 1rem;
+  padding: 4rem 2rem;
 }
 
 header {
@@ -30,13 +31,13 @@ header {
 
 h1 {
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin: 0.2rem 0;
   letter-spacing: 1px;
 }
 
 .tagline {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 300;
   color: var(--accent);
   text-transform: uppercase;
@@ -44,8 +45,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2rem;
-  margin-top: 2rem;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -53,7 +54,7 @@ h2 {
 }
 
 ul {
-  padding-left: 1rem;
+  padding-left: 1.25rem;
 }
 
 a {
@@ -63,7 +64,7 @@ a {
 
 footer {
   text-align: center;
-  margin-top: 4rem;
-  font-size: 0.9rem;
-  color: #888;
+  margin-top: 5rem;
+  font-size: 0.95rem;
+  color: #bbb;
 }
