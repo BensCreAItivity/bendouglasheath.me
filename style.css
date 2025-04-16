@@ -48,6 +48,13 @@ hr {
   margin: 2rem 0;
 }
 
+.tagline {
+  color: var(--accent);
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
 .columns {
   display: flex;
   flex-wrap: wrap;
